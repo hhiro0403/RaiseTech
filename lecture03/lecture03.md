@@ -1,23 +1,23 @@
 # 第3回課題<br>
 
 1. サンプルアプリケーション<br>
-![サンプルアプリケーション](lecture03/a.png)br><br>
+![サンプルアプリケーション](./lecture03/a.png)br><br>
 
 2. APサーバーの名前とバージョン<br>
 - puma バージョン：5.65<br>
-![APサーバー](lecture3/b.png)<br><br>
+![APサーバー](./lecture3/b.png)<br><br>
 
 3. APサーバーを終了させた場合引き続きアクセスできるか？<br>
 - アクセス不可<br>
-![サーバー停止](lecture3/c.png)<br><br>
+![サーバー停止](./lecture3/c.png)<br><br>
 
 4. DBサーバー<br>
 - MYSQL　バージョン：8.0.34<br>
-![mysqlバージョン](lecture3/d.png)<br><br>
+![mysqlバージョン](./lecture3/d.png)<br><br>
 
 5. DBサーバーを終了させた場合引き続きアクセスできるのか？<br>
 - アクセス不可<br>
-![mysqlサーバー停止](lecture3/e.png)<br><br>
+![mysqlサーバー停止](./lecture3/e.png)<br><br>
 
 6. Railsの構成管理ツールの名前は？<br>
 - gem<br>
