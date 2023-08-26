@@ -1,23 +1,23 @@
 # 第3回課題
 
 - サンプルアプリケーション
-![a](./RaiseTech/lecture03/a.png)
+![a](./RaiseTech/img/a.png)
 
 - APサーバーの名前とバージョン:puma バージョン：5.65
-![b](./RaiseTech/lecture03/b.png)
+![b](./RaiseTech/img/b.png)
 
 - APサーバーを終了させた場合引き続きアクセスできるか？
 - アクセス不可
-![c](./RaiseTech/lecture03/c.png)
+![c](./RaiseTech/img/c.png)
 
 - DBサーバー
 - MYSQL　バージョン：8.0.34
-![d](./RaiseTech/lecture03/d.png)
+![d](./RaiseTech/img/d.png)
 
 
 - DBサーバーを終了させた場合引き続きアクセスできるのか？
 - アクセス不可
-![e](./RaiseTech/lecture03/e.png)
+![e](./RaiseTech/img/e.png)
 
 - Railsの構成管理ツールの名前は？
 - Bundler
