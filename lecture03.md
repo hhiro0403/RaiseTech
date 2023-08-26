@@ -1,7 +1,7 @@
 # 第3回課題　修正版
 
 - サンプルアプリケーション
-![a](RaiseTech/img/a.png)
+![a](./img/a.png)
 
 - APサーバーの名前とバージョン:puma バージョン：5.65
 ![b](RaiseTech/img/b.png)
