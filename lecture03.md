@@ -4,20 +4,20 @@
 ![a](./img/a.png)
 
 - APサーバーの名前とバージョン:puma バージョン：5.65
-![b](RaiseTech/img/b.png)
+![b](./img/b.png)
 
 - APサーバーを終了させた場合引き続きアクセスできるか？
 - アクセス不可
-![c](RaiseTech/img/c.png)
+![c](./img/c.png)
 
 - DBサーバー
 - MYSQL　バージョン：8.0.34
-![d](RaiseTech/img/d.png)
+![d](./img/d.png)
 
 
 - DBサーバーを終了させた場合引き続きアクセスできるのか？
 - アクセス不可
-![e](RaiseTech/img/e.png)
+![e](./img/e.png)
 
 - Railsの構成管理ツールの名前は？
 - Bundler
