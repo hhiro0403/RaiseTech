@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: lecture10 S3
+
+Resources:
+
+ S3:
+   Type: AWS::S3::Bucket
+   Properties:
+     BucketName: lecture10
+     AccessControl: Private
+     PublicAccessBlockConfiguration:
+       BlockPublicAcls: True
+       BlockPublicPolicy: True
+       IgnorePublicAcls: True
+       RestrictPublicBuckets: True
+
+ VPCEndpoint:
+   Type: "AWS::EC2::VPCEndpoint"
+   Properties:
+     RouteTableIds: 
+     - {'Fn::ImportValue': 'RouteTable'}
+     ServiceName: com.amazonaws.ap-northeast-1.s3
+     VpcEndpointType: Gateway
+     VpcId: {'Fn::ImportValue': 'VPC'}

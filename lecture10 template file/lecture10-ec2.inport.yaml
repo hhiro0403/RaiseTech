@@ -1,0 +1,64 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: lecture10 ec2
+
+Resources:
+# EC2
+# 
+#
+  WebInstance:
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: ami-0ff21806645c5e492
+      InstanceType: t2.micro
+      KeyName: RaiseTech-lecture04
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeleteOnTermination: true
+          DeviceIndex: "0"
+          GroupSet: 
+              - !Ref PublicSecurityGroup
+          SubnetId: {'Fn::ImportValue': 'WebPublicSubnet1'}
+      Tags:
+        -
+          Key: Name
+          Value: lecture10
+
+ 
+# security group 
+#
+#
+  PublicSecurityGroup: 
+   Type: AWS::EC2::SecurityGroup
+   Properties: 
+    GroupDescription: PublicSecurityGroup
+    SecurityGroupEgress: 
+      - IpProtocol: -1
+        FromPort: -1
+        ToPort: -1
+        CidrIp: 0.0.0.0/0
+    SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: 80
+        ToPort: 80
+        CidrIp: 0.0.0.0/0
+        FromPort: 443
+        ToPort: 443
+        CidrIp: 0.0.0.0/0
+      - IpProtocol: tcp
+        FromPort: 22
+        ToPort: 22
+        CidrIp: 0.0.0.0/0
+    VpcId: {'Fn::ImportValue': 'VPC'}
+
+# エクスポートするためのセクション
+Outputs:
+  PublicSecurityGroup:
+    Value: !Ref PublicSecurityGroup  # 作成されたVPCのIDを
+    Export:
+      Name: PublicSecurityGroup  # この名前でエクスポートする
+
+  WebInstance:
+    Value: !Ref WebInstance  # 作成されたVPCのIDを
+    Export:
+      Name: WebInstance  # この名前でエクスポートする
