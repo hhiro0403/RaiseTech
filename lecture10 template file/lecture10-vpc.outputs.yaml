@@ -1,20 +1,12 @@
-AWSTemplateFormatVersion: "2010-09-09"
+AWSTemplateFormatVersion: 2010-09-09
 Description: lecture10 VPC
 Mappings:
   RegionMap:
     ap-northeast-1a: 
-      Name: "ap-northeast-1a"
+      Name: ap-northeast-1a
     ap-northeast-1c: 
-      Name: "ap-northeast-1c"  
+      Name: ap-northeast-1c
 
-# Parameters:
-#  SystemName:
-#    Type: String
-#    Default: lecture10
-
-#  EC2ImageId:
-#    Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
-#    Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-kernel-5.10-hvm-x86_64-gp2
 
 Resources:
 
@@ -85,7 +77,7 @@ Resources:
       SubnetIds:  
         - !Ref privatesubnet1
         - !Ref privatesubnet2
-      DBSubnetGroupName: database-10
+      DBSubnetGroupName: lecture10
       Tags: 
       - Key: Name
         Value: rdssubnetgroup
@@ -152,26 +144,26 @@ Resources:
 # エクスポートするためのセクション
 Outputs:
   VPC:
-    Value: !Ref VPC  # 作成されたVPCのIDを
+    Value: !Ref VPC  # 作成されたIDを
     Export:
-      Name: VPC  # この名前でエクスポートする
+      Name: VPCID  # この名前でエクスポートする
   
   WebPublicSubnet1:
-    Value: !Ref WebPublicSubnet1  # 作成されたVPCのIDを
+    Value: !Ref WebPublicSubnet1  # 作成されたIDを
     Export:
-      Name: WebPublicSubnet1  # この名前でエクスポートする
+      Name: WebPublicSubnet1ID  # この名前でエクスポートする
 
   WebPublicSubnet2:
-    Value: !Ref WebPublicSubnet2  # 作成されたVPCのIDを
+    Value: !Ref WebPublicSubnet2  # 作成されたIDを
     Export:
-      Name: WebPublicSubnet2  # この名前でエクスポートする
+      Name: WebPublicSubnet2ID  # この名前でエクスポートする
 
   rdssubnetgroup:
-    Value: !Ref rdssubnetgroup  # 作成されたVPCのIDを
+    Value: !Ref rdssubnetgroup  # 作成されたIDを
     Export:
       Name: rdssubnetgroup  # この名前でエクスポートする
 
   RouteTable:
-    Value: !Ref RouteTable  # 作成されたVPCのIDを
+    Value: !Ref RouteTable  # 作成されたIDを
     Export:
-      Name: RouteTable  # この名前でエクスポートする
+      Name: RouteTableID  # この名前でエクスポートする

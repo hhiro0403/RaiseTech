@@ -18,7 +18,7 @@ Resources:
           DeviceIndex: "0"
           GroupSet: 
               - !Ref PublicSecurityGroup
-          SubnetId: {'Fn::ImportValue': 'WebPublicSubnet1'}
+          SubnetId: !ImportValue WebPublicSubnet1ID
       Tags:
         -
           Key: Name
@@ -49,14 +49,14 @@ Resources:
         FromPort: 22
         ToPort: 22
         CidrIp: 0.0.0.0/0
-    VpcId: {'Fn::ImportValue': 'VPC'}
+    VpcId: !ImportValue VPCID
 
 # エクスポートするためのセクション
 Outputs:
   PublicSecurityGroup:
     Value: !Ref PublicSecurityGroup  # 作成されたVPCのIDを
     Export:
-      Name: PublicSecurityGroup  # この名前でエクスポートする
+      Name: PublicSecurityGroupID  # この名前でエクスポートする
 
   WebInstance:
     Value: !Ref WebInstance  # 作成されたVPCのIDを

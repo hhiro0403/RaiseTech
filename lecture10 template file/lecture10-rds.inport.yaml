@@ -17,8 +17,8 @@ Resources:
       - IpProtocol: tcp
         FromPort: 3306
         ToPort: 3306
-        SourceSecurityGroupId: {'Fn::ImportValue': 'PublicSecurityGroup'}
-    VpcId: {'Fn::ImportValue': 'VPC'}
+        SourceSecurityGroupId: !ImportValue PublicSecurityGroupID
+    VpcId: !ImportValue VPCID
 
   # RDS
   #
@@ -29,7 +29,7 @@ Resources:
      AllocatedStorage: 20
      DBInstanceClass: db.t3.micro
      DBSubnetGroupName: 
-        {'Fn::ImportValue': 'rdssubnetgroup'}
+        !ImportValue rdssubnetgroup
      Engine: mysql
      EngineVersion: 8.0.28
      MasterUsername: admin
