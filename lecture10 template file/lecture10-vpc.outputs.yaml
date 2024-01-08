@@ -167,4 +167,3 @@ Outputs:
     Value: !Ref RouteTable  # 作成されたIDを
     Export:
       Name: RouteTableID  # この名前でエクスポートする
-      

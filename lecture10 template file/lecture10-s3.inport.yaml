@@ -22,4 +22,3 @@ Resources:
      ServiceName: com.amazonaws.ap-northeast-1.s3
      VpcEndpointType: Gateway
      VpcId: !ImportValue VPCID
-     
