@@ -29,7 +29,7 @@ Resources:
      AllocatedStorage: 20
      DBInstanceClass: db.t3.micro
      DBSubnetGroupName: 
-        !ImportValue rdssubnetgroup
+        !ImportValue RdsSubnetGroupMysqlID
      Engine: mysql
      EngineVersion: 8.0.28
      MasterUsername: admin

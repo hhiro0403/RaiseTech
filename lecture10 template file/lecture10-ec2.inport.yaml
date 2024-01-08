@@ -61,4 +61,4 @@ Outputs:
   WebInstance:
     Value: !Ref WebInstance  # 作成されたVPCのIDを
     Export:
-      Name: WebInstance  # この名前でエクスポートする
+      Name: WebInstanceAlbTargetGroupID  # この名前でエクスポートする

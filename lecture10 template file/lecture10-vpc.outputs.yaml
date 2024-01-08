@@ -161,7 +161,7 @@ Outputs:
   rdssubnetgroup:
     Value: !Ref rdssubnetgroup  # 作成されたIDを
     Export:
-      Name: rdssubnetgroup  # この名前でエクスポートする
+      Name: RdsSubnetGroupMysqlID  # この名前でエクスポートする
 
   RouteTable:
     Value: !Ref RouteTable  # 作成されたIDを

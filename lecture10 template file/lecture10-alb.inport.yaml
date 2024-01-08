@@ -51,7 +51,7 @@ Resources:
      ProtocolVersion: HTTP1
      TargetType: instance
      Targets: 
-         - Id: !ImportValue WebInstance
+         - Id: !ImportValue WebInstanceAlbTargetGroupID
            Port: 80
      UnhealthyThresholdCount: 2
      Matcher: 
