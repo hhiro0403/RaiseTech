@@ -69,3 +69,4 @@ Resources:
      LoadBalancerArn: !Ref alb
      Port: 80
      Protocol: HTTP
+     
