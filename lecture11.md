@@ -13,7 +13,8 @@
 ### Serverspec設定
 
 - gem install serverspec
-serverspec-init
+- serverspec-init
+```
 Select OS type:
 
   1) UN*X
@@ -31,7 +32,7 @@ Select number: 2
  + spec/localhost/httpd_spec.rb
  + spec/spec_helper.rb
  + Rakefile
-
+```
 
 ### Nginxの起動
 
@@ -43,7 +44,8 @@ Select number: 2
 
 ### Serverspec のサンプルテストコードを使用
 - Nginxを80番ポートでリッスンさせるため、ポート番号を80に変更
-- require 'spec_helper'
+```
+require 'spec_helper'
 
 listen_port = 80
 
@@ -58,7 +60,7 @@ end
 describe command('curl http://127.0.0.1:#{listen_port}/_plugin/head/ -o /dev/null -w "%{http_code}\n" -s') do
   its(:stdout) { should match /^200$/ }
 end
-
+```
 
 ### テスト実施
 
