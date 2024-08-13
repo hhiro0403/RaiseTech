@@ -31,9 +31,7 @@ Resources:
      DBSubnetGroupName: 
         !ImportValue RdsSubnetGroupMysqlID
      Engine: mysql
-     EngineVersion: 8.0.28
      MasterUsername: admin
-     MasterUserPassword: adminadmin
      StorageType: gp2
      Tags:
       - Key: Name
