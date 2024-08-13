@@ -1,7 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: lecture10 VPC
-Mappings:
-
 
 Resources:
 
@@ -24,7 +22,6 @@ Resources:
     Properties:
       AvailabilityZone: ap-northeast-1a
       VpcId: !Ref VPC
-      CidrBlock: 10.0.0.0/20
       MapPublicIpOnLaunch: true
       Tags:
         -
