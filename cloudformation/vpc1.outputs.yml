@@ -20,7 +20,6 @@ Resources:
   WebPublicSubnet1:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: ap-northeast-1a
       VpcId: !Ref VPC
       MapPublicIpOnLaunch: true
       Tags:
