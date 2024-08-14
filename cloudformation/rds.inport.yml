@@ -11,11 +11,11 @@ Parameters:
     Type: String
     Default: root
 # 
-# RDSpassword
+# MasterUserPassword
 #
-  RDSpassword:
-    Description: Input RDS Password 
+    MasterUserPassword:
     Type: String
+    Description: Password string for master user of DB Instance
     NoEcho: true
 
 Resources:
@@ -44,7 +44,7 @@ Resources:
      Engine: mysql
      EngineVersion: "8.0.35"
      MasterUsername: !Ref RDSUser
-     MasterUserPassword: !Ref RDSpassword
+     MasterUserPassword: !Ref MasterUserPassword
      StorageType: gp2
      Tags:
       - Key: Name
