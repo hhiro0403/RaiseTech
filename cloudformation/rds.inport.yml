@@ -11,14 +11,6 @@ Parameters:
     Type: String
     Default: root
 
-# 
-# RDSPassword
-# 
-  RDSpassword:
-    Description: Input RDS Password 
-    Type: String
-    NoEcho: true
-
 Resources:
 
   rdssecuritygroup:
