@@ -14,13 +14,10 @@ RDSUser:
 # 
 # RDSPassword
 # 
- RDSpassword:
-   Type: String
-   Description: rds master user password
-   NoEcho: true
-   MinLength: 8
-   MaxLength: 128
-   AllowedPattern: "[a-zA-Z0-9]*"
+RDSpassword:
+    Description: Input RDS Password 
+    Type: String
+    NoEcho: true
 
 Resources:
 
