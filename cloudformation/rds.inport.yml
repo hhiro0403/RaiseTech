@@ -13,7 +13,7 @@ Parameters:
 # 
 # MasterUserPassword
 #
-    MasterUserPassword:
+  MasterUserPassword:
     Type: String
     Description: Password string for master user of DB Instance
     NoEcho: true
