@@ -6,7 +6,7 @@ Parameters:
 # 
 # RDSUser
 # 
-RDSUser:
+  RDSUser:
     Description: Input RDS Maseter User Name
     Type: String
     Default: root
@@ -14,7 +14,7 @@ RDSUser:
 # 
 # RDSPassword
 # 
-RDSpassword:
+  RDSpassword:
     Description: Input RDS Password 
     Type: String
     NoEcho: true
