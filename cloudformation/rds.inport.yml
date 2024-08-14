@@ -10,6 +10,13 @@ Parameters:
     Description: Input RDS Maseter User Name
     Type: String
     Default: root
+# 
+# RDSpassword
+#
+  RDSpassword:
+    Description: Input RDS Password 
+    Type: String
+    NoEcho: true
 
 Resources:
 
@@ -37,6 +44,7 @@ Resources:
      Engine: mysql
      EngineVersion: "8.0.35"
      MasterUsername: !Ref RDSUser
+     MasterUserPassword: !Ref RDSpassword
      StorageType: gp2
      Tags:
       - Key: Name
