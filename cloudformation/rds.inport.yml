@@ -45,7 +45,6 @@ Resources:
      Engine: mysql
      EngineVersion: "8.0.35"
      MasterUsername: !Ref RDSUser
-     MasterUserPassword: !Ref RDSpassword
      StorageType: gp2
      Tags:
       - Key: Name
