@@ -38,6 +38,7 @@ Resources:
      DBSubnetGroupName: 
         !ImportValue RdsSubnetGroupMysqlID
      Engine: mysql
+     EngineVersion: "8.0.35"
      MasterUsername: admin
      MasterUserPassword: !Ref RDSUserPassword
      StorageType: gp2

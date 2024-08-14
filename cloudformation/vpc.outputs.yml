@@ -1,11 +1,16 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: lecture10 VPC
-Mappings:
-  RegionMap:
-    ap-northeast-1a: 
-      Name: ap-northeast-1a
-    ap-northeast-1c: 
-      Name: ap-northeast-1c
+Parameters:
+  AvailabilityZone1:
+    Description: Availability Zone for 1Subnet
+    Type: String
+    Default: "ap-northeast-1a"
+  
+  AvailabilityZone2:
+    Description: Availability Zone for 2Subnet
+    Type: String
+    Default: "ap-northeast-1c"
+
 
 
 Resources:
@@ -27,7 +32,7 @@ Resources:
   WebPublicSubnet1:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Ref AvailabilityZone1
       VpcId: !Ref VPC
       CidrBlock: 10.0.0.0/20
       MapPublicIpOnLaunch: true
@@ -39,7 +44,7 @@ Resources:
   WebPublicSubnet2:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: ap-northeast-1c
+      AvailabilityZone: !Ref AvailabilityZone2
       VpcId: !Ref VPC
       CidrBlock: 10.0.16.0/20
       MapPublicIpOnLaunch: true
@@ -51,7 +56,7 @@ Resources:
   privatesubnet1:
     Type: AWS::EC2::Subnet
     Properties: 
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Ref AvailabilityZone1
       CidrBlock: 10.0.128.0/20
       MapPublicIpOnLaunch: true
       Tags:
@@ -62,7 +67,7 @@ Resources:
   privatesubnet2:
    Type: AWS::EC2::Subnet
    Properties: 
-      AvailabilityZone: ap-northeast-1c
+      AvailabilityZone: !Ref AvailabilityZone2
       CidrBlock: 10.0.144.0/20
       MapPublicIpOnLaunch: true
       Tags:
