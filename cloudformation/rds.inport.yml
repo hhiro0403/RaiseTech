@@ -4,9 +4,17 @@ Description: lecture10 RDS
 
 Parameters:
 # 
-# RDS User Password
+# RDSUser
 # 
- RDSUserPassword:
+RDSUser:
+    Description: Input RDS Maseter User Name
+    Type: String
+    Default: root
+
+# 
+# RDSPassword
+# 
+ RDSpassword:
    Type: String
    Description: rds master user password
    NoEcho: true
@@ -39,8 +47,8 @@ Resources:
         !ImportValue RdsSubnetGroupMysqlID
      Engine: mysql
      EngineVersion: "8.0.35"
-     MasterUsername: admin
-     MasterUserPassword: !Ref RDSUserPassword
+     MasterUsername: !Ref RDSUser
+     MasterUserPassword: !Ref RDSpassword
      StorageType: gp2
      Tags:
       - Key: Name
