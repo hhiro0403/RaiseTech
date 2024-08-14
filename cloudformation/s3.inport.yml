@@ -7,7 +7,6 @@ Resources:
    Type: AWS::S3::Bucket
    Properties:
      BucketName: lecture10
-     AccessControl: Private
      PublicAccessBlockConfiguration:
        BlockPublicAcls: True
        BlockPublicPolicy: True

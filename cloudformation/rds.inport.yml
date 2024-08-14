@@ -2,17 +2,24 @@ AWSTemplateFormatVersion: 2010-09-09
 
 Description: lecture10 RDS
 
+Parameters:
+# 
+# RDS User Password
+# 
+ RDSUserPassword:
+   Type: String
+   Description: rds master user password
+   NoEcho: true
+   MinLength: 8
+   MaxLength: 128
+   AllowedPattern: "[a-zA-Z0-9]*"
+
 Resources:
 
   rdssecuritygroup:
    Type: AWS::EC2::SecurityGroup
    Properties: 
     GroupDescription: rds-securitygroup
-    SecurityGroupEgress: 
-      - IpProtocol: -1
-        FromPort: -1
-        ToPort: -1
-        CidrIp: 0.0.0.0/0
     SecurityGroupIngress:
       - IpProtocol: tcp
         FromPort: 3306
@@ -31,9 +38,8 @@ Resources:
      DBSubnetGroupName: 
         !ImportValue RdsSubnetGroupMysqlID
      Engine: mysql
-     EngineVersion: 8.0.28
      MasterUsername: admin
-     MasterUserPassword: adminadmin
+     MasterUserPassword: !Ref RDSUserPassword
      StorageType: gp2
      Tags:
       - Key: Name
