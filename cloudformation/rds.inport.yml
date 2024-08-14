@@ -2,22 +2,6 @@ AWSTemplateFormatVersion: 2010-09-09
 
 Description: lecture10 RDS
 
-Parameters:
-# 
-# RDSUser
-# 
-  RDSUser:
-    Description: Input RDS Maseter User Name
-    Type: String
-    Default: root
-# 
-# MasterUserPassword
-#
-  MasterUserPassword:
-    Type: String
-    Description: Password string for master user of DB Instance
-    NoEcho: true
-
 Resources:
 
   rdssecuritygroup:
@@ -43,8 +27,8 @@ Resources:
         !ImportValue RdsSubnetGroupMysqlID
      Engine: mysql
      EngineVersion: "8.0.35"
-     MasterUsername: !Ref RDSUser
-     MasterUserPassword: !Ref MasterUserPassword
+     MasterUsername: admin
+     MasterUserPassword: '{{resolve:secretsmanager:raisetech/cf/mysql:SecretString:password}
      StorageType: gp2
      Tags:
       - Key: Name
