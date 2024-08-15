@@ -28,7 +28,7 @@ Resources:
      Engine: mysql
      EngineVersion: "8.0.35"
      MasterUsername: admin
-     MasterUserPassword: '{{resolve:secretsmanager:rds:SecretString:password}}'
+     MasterUserPassword: '{{resolve:ssm-secure:rds-master-user-password:1}}'
      StorageType: gp2
      Tags:
       - Key: Name
