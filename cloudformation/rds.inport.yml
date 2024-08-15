@@ -3,6 +3,16 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: lecture10 RDS
 
 Resources:
+  RDSSecret:
+    Type: "AWS::SecretsManager::Secret"
+    Properties:
+      Name: "MyRDSSecret"
+      Description: "RDS password for my RDS instance"
+      GenerateSecretString:
+        SecretStringTemplate: '{"username": "admin"}'
+        GenerateStringKey: "password"
+        PasswordLength: 16
+        ExcludeCharacters: '"@/\'
 
   rdssecuritygroup:
    Type: AWS::EC2::SecurityGroup
@@ -28,7 +38,7 @@ Resources:
      Engine: mysql
      EngineVersion: "8.0.35"
      MasterUsername: admin
-     MasterUserPassword: '{{resolve:ssm-secure:/user/password}}'
+     MasterUserPassword: !Sub '{{resolve:secretsmanager:${RDSSecret}:SecretString:password}}'
      MultiAZ: false
      StorageType: gp2
      Tags:
