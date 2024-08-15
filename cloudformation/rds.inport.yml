@@ -28,7 +28,7 @@ Resources:
      Engine: mysql
      EngineVersion: "8.0.35"
      MasterUsername: admin
-     MasterUserPassword: "{{resolve:secretsmanager:raisetech/cf/mysql:SecretString:password}}"
+     MasterUserPassword: '{{resolve:secretsmanager:rds:SecretString:password}}'
      StorageType: gp2
      Tags:
       - Key: Name
