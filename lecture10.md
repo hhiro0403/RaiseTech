@@ -8,19 +8,19 @@
 
 ### テンプレート・リソース VPC
 
-- cloudformationフォルダのlecture10-vpc.outputs.yml[lecture10-vpc.outputs.yml](./cloudformation/lecture10-vpc.outputs.yml)参照
+- cloudformationフォルダの[lecture10-vpc.outputs.yml](./cloudformation/lecture10-vpc.outputs.yml)参照
 
 ![b](./lecture10/lecture10-vpc.outputs.yml参照.png)
 
 ### テンプレート・リソース ec2
 
-- cloudformationフォルダのlecture10-ec2.inport.yml[lecture10-ec2.inport.yml](./cloudformation/lecture10-ec2.inport.yml)参照
+- cloudformationフォルダの[lecture10-ec2.inport.yml](./cloudformation/lecture10-ec2.inport.yml)参照
 
 ![c](./lecture10/lecture10-ec2.inport.yml参照.png)
 
 ### テンプレート・リソース rds
 
-- cloudformationフォルダのlecture10-rds.inport.yml[lecture10-rds.inport.yml](./cloudformation/lecture10-rds.inport.yml)参照
+- cloudformationフォルダの[lecture10-rds.inport.yml](./cloudformation/lecture10-rds.inport.yml)参照
 
 ![d](./lecture10/lecture10-rds.inport.yml参照.png)
 
