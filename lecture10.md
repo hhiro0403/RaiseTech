@@ -32,7 +32,7 @@
 
 ### テンプレート・リソース alb
 
-- cloudformationフォルダの[lecture10-alb.inport.yml](lecture10-alb.inport.yml)参照
+- cloudformationフォルダの[./cloudformation/lecture10-alb.inport.yml](lecture10-alb.inport.yml)参照
 
 ![f](./lecture10/lecture10-alb.inport.yaml参照.png)
 
