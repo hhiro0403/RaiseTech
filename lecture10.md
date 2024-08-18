@@ -8,33 +8,33 @@
 
 ### テンプレート・リソース VPC
 
-- cloudformationフォルダのlecture10-vpc.outputs.yaml参照
+- cloudformationフォルダのlecture10-vpc.outputs.yml参照
 
-![b](./lecture10/lecture10-vpc.outputs.yaml参照.png)
+![b](./lecture10/lecture10-vpc.outputs.yml参照.png)
 
 ### テンプレート・リソース ec2
 
-- cloudformationフォルダのlecture10-ec2.inport.yaml参照
+- cloudformationフォルダのlecture10-ec2.inport.yml参照
 
-![c](./lecture10/lecture10-ec2.inport.yaml参照.png)
+![c](./lecture10/lecture10-ec2.inport.yml参照.png)
 
 ### テンプレート・リソース rds
 
-- cloudformationフォルダのlecture10-rds.inport.yaml参照
+- cloudformationフォルダのlecture10-rds.inport.yml参照
 
-![d](./lecture10/lecture10-rds.inport.yaml参照.png)
+![d](./lecture10/lecture10-rds.inport.yml参照.png)
 
 ### テンプレート・リソース s3
 
-- cloudformationフォルダのlecture10-s3.inport.yaml参照
+- cloudformationフォルダのlecture10-s3.inport.yml参照
 
-![e](./lecture10/lecture10-s3.inport.yaml参照.png)
+![e](./lecture10/lecture10-s3.inport.yml参照.png)
 
 ### テンプレート・リソース alb
 
-- cloudformationフォルダの[./cloudformation/lecture10-alb.inport.yml](lecture10-alb.inport.yml)参照
+- cloudformationフォルダの[lecture10-alb.inport.yml](./cloudformation/lecture10-alb.inport.yml)参照
 
-![f](./lecture10/lecture10-alb.inport.yaml参照.png)
+![f](./lecture10/lecture10-alb.inport.yml参照.png)
 
 
 ### 今回の課題で学んだこと
