@@ -1,11 +1,13 @@
 # RaiseTech AWSコース
 
-## 概要
-- 第12回までの学習記録の掲載
+## 概要説明
+- 2023/08 月より受講開始
+- 第12回までの課題を掲載
+
 
 ### 実施内容
 1. AWSを使用して、VPC・EC2・RDS・ALB・S3を構築
-- 作成したファイルは[RaiseTechリポジトリ](https://github.com/hhiro0403/RaiseTech)を参照
+- 作成したファイルは[RaiseTechリポジトリ](https://github.com/hhiro0403/RaiseTech/blob/main/README.md)を参照
 
 ### 学習記録
  RaiseTechで学習した講座内容と課題は下記の通りになります。<br>
