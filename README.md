@@ -2,11 +2,11 @@
 
 ## 概要説明
 - 2023/08 月より受講開始
-- 第12回までの課題を掲載
+- 第12回までの課題を掲載（全16回の講義は受講済み、第13回の課題は実施中）
 
 
 ### 実施内容
-1. AWSを使用して、VPC・EC2・RDS・ALB・S3を構築
+- AWSを使用した課題の第12回までの学習記録を構築
 - 作成したファイルは[RaiseTechリポジトリ](https://github.com/hhiro0403/RaiseTech/blob/main/README.md)を参照
 
 ### 学習記録
@@ -25,3 +25,5 @@
 | 第 10 回  | ・インフラ自動化<br>・自動化のメリット<br>・全自動と半自動<br>・自動化の範囲<br>・CloudFormation<br>・CloudFormation テンプレートの解説 | ・CloudFormation で現在までに作った環境をコード化 | [lecture10.md](lecture10.md) | - |
 | 第 11 回  | ・インフラのコード化を支援するツール<br>・インフラのテストとは<br>・テスト駆動開発<br>・ServerSpec<br>・良い質問と回答ピックアップ | ・ServerSpec のテストを成功させること | [lecture11.md](lecture11.md) | - |
 | 第 12 回  | ・Terraform の解説<br>・DevOps<br>・CI/CD ツールとは<br>・イベントトリガーの設定や連携<br>・閑話休題(良い質問と回答のピックアップ) | ・CircleCI のサンプルコンフィグが正しく動作するようにリポジトリに組み込む | [lecture12.md](lecture12.md) | - |
+
+| 第 13 回  | ・構成管理(プロビジョニング)ツールとは<br>・Ansible<br>・Ansible の導入<br>・OpsWorks<br>・CircleCI(CI/CD ツール)との併用 | <br>実施中 | - |
