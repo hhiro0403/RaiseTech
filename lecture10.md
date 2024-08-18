@@ -8,31 +8,31 @@
 
 ### テンプレート・リソース VPC
 
-- lecture10-vpc.outputs.yaml参照
+- cloudformationフォルダのlecture10-vpc.outputs.yaml参照
 
 ![b](./lecture10/lecture10-vpc.outputs.yaml参照.png)
 
 ### テンプレート・リソース ec2
 
-- lecture10-ec2.inport.yaml参照
+- cloudformationフォルダのlecture10-ec2.inport.yaml参照
 
 ![c](./lecture10/lecture10-ec2.inport.yaml参照.png)
 
 ### テンプレート・リソース rds
 
-- lecture10-rds.inport.yaml参照
+- cloudformationフォルダのlecture10-rds.inport.yaml参照
 
 ![d](./lecture10/lecture10-rds.inport.yaml参照.png)
 
 ### テンプレート・リソース s3
 
-- lecture10-s3.inport.yaml参照
+- cloudformationフォルダのlecture10-s3.inport.yaml参照
 
 ![e](./lecture10/lecture10-s3.inport.yaml参照.png)
 
 ### テンプレート・リソース alb
 
-- lecture10-alb.inport.yaml参照
+- cloudformationフォルダのlecture10-alb.inport.yaml参照
 
 ![f](./lecture10/lecture10-alb.inport.yaml参照.png)
 
