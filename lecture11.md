@@ -41,7 +41,7 @@ Select number: 2
 - sudo systemctl start nginx
 - sudo systemctl status nginx
 
-![a](./img11/a.png)
+![a](./lecture11/Nginxの起動.png)
 
 
 ### Serverspec のサンプルテストコードを使用
@@ -68,7 +68,7 @@ end
 
 - rake spec
 - curlの結果200でOKが返ってきている事、0 failuresになっている事を確認。
-![b](./img11/b.png)
+![b](./lecture11/テスト実施.png)
 
 
 ### 今回の課題で学んだこと
