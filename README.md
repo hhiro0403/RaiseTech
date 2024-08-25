@@ -2,7 +2,7 @@
 
 ## 概要説明
 - 2023/08 月より受講開始
-- 第12回まで課題を掲載（全16回講義は受講済み、第13回課題は取り組み中）
+- 第12回まで課題を掲載（全16回講義は受講済み、第13回課題は実施中）
 
 
 ### 実施内容
@@ -25,7 +25,7 @@
 | 第 10 回  | ・インフラ自動化<br>・自動化のメリット<br>・全自動と半自動<br>・自動化の範囲<br>・CloudFormation<br>・CloudFormation テンプレートの解説 | ・CloudFormation で現在までに作った環境をコード化 | [lecture10.md](lecture10.md) | - |
 | 第 11 回  | ・インフラのコード化を支援するツール<br>・インフラのテストとは<br>・テスト駆動開発<br>・ServerSpec<br>・良い質問と回答ピックアップ | ・ServerSpec のテストを成功させること | [lecture11.md](lecture11.md) | - |
 | 第 12 回  | ・Terraform の解説<br>・DevOps<br>・CI/CD ツールとは<br>・イベントトリガーの設定や連携<br>・閑話休題(良い質問と回答のピックアップ) | ・CircleCI のサンプルコンフィグが正しく動作するようにリポジトリに組み込む | [lecture12.md](lecture12.md) | - |
-| 第 13 回  | ・構成管理(プロビジョニング)ツールとは<br>・Ansible<br>・Ansible の導入<br>・OpsWorks<br>・CircleCI(CI/CD ツール)との併用 | <br>・Ansibleの導入<br>・CircleCIとの併用 | <br>取り組み中 |
+| 第 13 回  | ・構成管理(プロビジョニング)ツールとは<br>・Ansible<br>・Ansible の導入<br>・OpsWorks<br>・CircleCI(CI/CD ツール)との併用 | <br>・Ansibleの導入<br>・CircleCIとの併用 | <br>実施中 |
 | 第 14 回  | ・ライブコーディング（Ansible〜CircleCI）(1) | なし | - | 講師による第 13回目のライブコーディング |
 | 第 15 回  | ・ライブコーディング（Ansible〜CircleCI）(2) | なし | - | 講師による第 13 回目のライブコーディング |
 | 第 16 回  | ・現場へ出ていくにあたって必要な技術と知識<br>・現場での立ち振る舞い<br>・就職・転職で優位に立つために<br>・さいごに<br>| なし | - | <br>最終回 |
