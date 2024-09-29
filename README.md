@@ -1,8 +1,8 @@
 # RaiseTech AWSコース
 
 ## 概要説明
-- 2023/08 月より受講開始
-- 下記のAWS環境を手動構築・手動で構築した内容をCloudFormationを利用して自動構築およびインフラコード化を支援するツールの使用（ServerSpec・CircleCI ）
+- 2023/08 月より受講開始、AWSの内容を中心に講義学習後、各課題をハンズオンにて取り組み学習していく
+- 下記のAWS環境を手動構築・手動で構築した内容をCloudFormationを利用して自動構築およびインフラコード化を支援するツールの使用（ServerSpec・CircleCI・Terraform）
 ![a](./lecture10/課題５で作成した構成図を元に環境を構築していく.png)
 
 - 作成したファイルは[RaiseTechリポジトリ](https://github.com/hhiro0403/RaiseTech/blob/main/README.md)を参照
